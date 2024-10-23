@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Becker</title>
+    <title>Redes Sociais</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,52 +20,55 @@
 
 
 <body>
+ 
 
-        
     <h1 class = "h1">Kauê Becker</h1>
     
     <h2 class = "h2"> Olá, eu sou o Kauê e eu <br> sou fotógrafo e designer de fotos com <br> ênfase em fotos com cores quentes</h2>
     
-    <nav>
-
+    <nav class = "nav1">
+        
         <a class = "fotos"   href="index.html">Fotos</a>
-        <a class = "midias"  href="social.html" >Redes Sociais</a>
-
+        <a class = "midias"  href="" width="">Redes Sociais</a>
+        
     </nav>
-
-
-
-<div class = "fotos_fila_um">    
-
-    <img class = "foto_um" src="image_one.jpg" width="480" height="820">
-    <img class = "foto_dois" src="image_two.jpg" width="480" height="820">
-    <img class = "foto_tres" src="image_tree.jpg" width="480" height="820">
-
-</div>
-
-
-<div class = "filaDois" >
     
-    <img class = "foto_cinco" src="image_five.jpg" width="630" height="1000">
+
+    <nav class = "nav2">
+
+        
+        <a class = "intagram" href="https://www.instagram.com/o._becker/">
+            
+            <div class = "instaPhoto">
+
+                <img class = "instagram" src="instagramIMG.png">
+                <img class = "instagramPFP" src="instaPFP.png">
+            
+            </div>
+
+</a>
+            <h3 class = "h3"> Mais Redes Sociais em breve!</h3>
+
+<!--    <a class = "" href="">
+
+            <div class = "" >
+
+                <img class = "" src ="">
+                <img class = "" src ="">
+ 
 
 
-    <div class = "fotosDeBaixo">
+            </div>
+        </a>  -->
 
-        <img class = "foto_quatro" src="image_four.jpg" width="860px" height="500px">
-        <img class = "foto_seis" src="image six.jpg" width="860px" height="500px">
 
-    </div>
+
+
+    </a>
+
     
-</div>
+    
 
-<div class = seventhPhoto>
-
-<img class = "foto_sete" src="image_seven.png" width="1540" height="860">
-
-</div>
-
-
-<div></div>
 
 
 
@@ -83,7 +86,7 @@
     }
 
 
-    nav {
+    .nav1 {
 
         background: #03010B;
         display: flex;
@@ -102,7 +105,7 @@
     }
     
     
-    nav a{
+    .nav1 a{
         border-radius:10px ;
         border: solid 5px white;
         padding-left: 20px;
@@ -114,22 +117,36 @@
         background-color: #0a0520;
     }
 
-    nav a:hover{
+    .nav1 a:hover{
         scale: 1.1;
         transition: 0.5s ease-in-out;
+    }
+
+    img{
+        height: 100px;
+        width: 100px;
     }
 
 
 
 
+    .nav2 {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
 
     .midias {
         display: flex;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top:5px;
-        padding-bottom:5px;
-        text-align:center;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top:0px;
+        padding-bottom:0px;
+
     }
 
 
@@ -167,15 +184,18 @@
     }
 
 
-    .fotos_fila_um {
-        padding-top: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-        
+    .h3 {
+        color: #E09801;
+        font-family: "Arima", system-ui;
+        font-weight: bolder;
+        font-size:60px;
+        margin-top: 40px;
 
     }
+    
+
+
+
 
 
     img {
@@ -187,41 +207,32 @@
         transition: 0.5s ease-in;
     }
 
+    .instaPhoto:hover {
+        scale: 1.1 ;
+        transition: 0.5s ease-in;
+    }
 
-
-    .filaDois {
+    .instaPhoto {
         display: flex;
-        justify-content: center;
-        padding-top: 30px;
-        padding-bottom: 40px;
-        gap:50px;
+        gap: 25px;
+        border: solid 5px white;
+        border-radius: 10px;
+        padding: 10px;
     }
 
-
-    .foto_quatro {
-        padding-bottom:10px ;
-    }
-
-
-    .fotosDeBaixo {
+    .behancePhoto {
         display: flex;
-        flex-direction: column;
-        
+        gap: 25px;
+    }
+
+    
+
+    .behancePhoto:hover {
+        scale: 1.1 ;
+        transition: 0.5s ease-in;
     }
 
 
-
-    .seventhPhoto {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 70px;
-    }
-
-
-    .fotos {
-
-    }
 
 </style>
 </html>
